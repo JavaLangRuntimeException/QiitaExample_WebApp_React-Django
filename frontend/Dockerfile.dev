@@ -1,0 +1,17 @@
+# Node.jsの公式イメージを使用
+FROM node:14
+
+# 作業ディレクトリの設定
+WORKDIR /app
+
+# package.jsonとpackage-lock.jsonをコピー
+COPY package*.json ./
+
+# Node.jsの依存パッケージをインストール
+RUN npm install
+
+# ソースコードをコピー
+COPY . .
+
+# ホットリロードサーバーを起動
+CMD ["npm", "run", "dev"]

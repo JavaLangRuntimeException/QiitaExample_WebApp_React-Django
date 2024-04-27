@@ -1,0 +1,30 @@
+# Python
+*.pyc
+*~
+__pycache__
+
+# Database
+db.sqlite3
+
+# Static files
+static/
+
+# Media files
+media/
+
+# Environment
+.env
+.venv
+env/
+
+# Node
+node_modules/
+npm-debug.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
